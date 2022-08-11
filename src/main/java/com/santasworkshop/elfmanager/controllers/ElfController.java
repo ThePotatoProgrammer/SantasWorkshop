@@ -20,6 +20,6 @@ public class ElfController {
     @PostMapping("/addElf")
     Elf addElf(@RequestBody Elf elf) {
         elfRepo.insert(elf);
-        return null;
+        return elf;
     }
 }
